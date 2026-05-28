@@ -87,8 +87,14 @@ export default function LandingMusicaPremium() {
     return () => clearInterval(popupInterval);
   }, []);
 
-  const handleCheckout = async () => {
-    alert('Aquí se conectará Wompi Checkout + automatización email + backend');
+  const handleCheckout = () => {
+  if (upsellSelected) {
+    window.location.href =
+      'https://checkout.nequi.wompi.co/l/WEcGnO';
+  } else {
+    window.location.href =
+      'https://checkout.nequi.wompi.co/l/klbmUz';
+  }
 
     // META PIXEL
     if (typeof window !== 'undefined' && (window as any).fbq) {

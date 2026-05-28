@@ -91,20 +91,20 @@ export default function LandingMusicaPremium() {
     alert('Aquí se conectará Wompi Checkout + automatización email + backend');
 
     // META PIXEL
-    if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'InitiateCheckout', {
-        value: total,
-        currency: 'COP',
-      });
-    }
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+  (window as any).fbq('track', 'InitiateCheckout', {
+    value: total,
+    currency: 'COP',
+  });
+}
 
     // TIKTOK PIXEL
-    if (typeof window !== 'undefined' && window.ttq) {
-      window.ttq.track('InitiateCheckout', {
-        value: total,
-        currency: 'COP',
-      });
-    }
+    if (typeof window !== 'undefined' && (window as any).ttq) {
+  (window as any).ttq.track('InitiateCheckout', {
+    value: total,
+    currency: 'COP',
+  });
+}
   };
   return (
     <div className="min-h-screen bg-black text-white font-sans">

@@ -90,10 +90,10 @@ export default function LandingMusicaPremium() {
   const handleCheckout = () => {
   if (upsellSelected) {
     window.location.href =
-      'https://checkout.nequi.wompi.co/l/WEcGnO';
+      'https://checkout.nequi.wompi.co/l/UXoyIu';
   } else {
     window.location.href =
-      'https://checkout.nequi.wompi.co/l/klbmUz';
+      'https://checkout.nequi.wompi.co/l/IJmpJG';
   }
 
     // META PIXEL
